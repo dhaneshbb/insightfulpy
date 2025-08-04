@@ -104,7 +104,6 @@ ipy.examples()
 - scipy >= 1.7.0
 - Additional dependencies: researchpy, tableone, missingno, tabulate
 
----
 ## Related links:
 
 - For detailed documentation and examples, visit [GitHub repository](https://github.com/dhaneshbb/insightfulpy).
@@ -115,4 +114,5 @@ ipy.examples()
 ---
 
 InsightfulPy makes data exploration intuitive and comprehensive.
+
 
