@@ -1,0 +1,19 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include NOTICE.txt
+include SECURITY.md
+include requirements.txt
+include requirements-dev.txt
+recursive-include docs *.md *.rst *.txt
+recursive-include examples *.py *.ipynb *.md
+recursive-include src/insightfulpy *.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.orig
+recursive-exclude * *.rej
+exclude .gitignore
+exclude .github/*
+exclude scripts/*
+exclude tests/*
+exclude assets/*
