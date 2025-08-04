@@ -104,22 +104,15 @@ ipy.examples()
 - scipy >= 1.7.0
 - Additional dependencies: researchpy, tableone, missingno, tabulate
 
-## Documentation
+---
+## Related links:
 
-For detailed documentation and examples, visit our [GitHub repository](https://github.com/dhaneshbb/insightfulpy).
-
-## Contributing
-
-Contributions are welcome! Please read our contributing guidelines and submit pull requests to our GitHub repository.
-
-## Support
-
-If you encounter any issues or have questions, please open an issue on our [GitHub Issues](https://github.com/dhaneshbb/insightfulpy/issues) page.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/dhaneshbb/insightfulpy/blob/main/LICENSE) file for details.
+- For detailed documentation and examples, visit [GitHub repository](https://github.com/dhaneshbb/insightfulpy).
+- Contributions are welcome! Please read contributing guidelines and submit pull requests to GitHub repository.
+- If you encounter any issues or have questions, please open an issue on [GitHub Issues](https://github.com/dhaneshbb/insightfulpy/issues) page.
+- This project is licensed under the MIT License - see the [LICENSE](https://github.com/dhaneshbb/insightfulpy/blob/main/LICENSE) file for details.
 
 ---
 
 InsightfulPy makes data exploration intuitive and comprehensive.
+
