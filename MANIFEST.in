@@ -17,3 +17,8 @@ exclude .github/*
 exclude scripts/*
 exclude tests/*
 exclude assets/*
+=======
+include LICENSE
+include README.md
+include NOTICE.txt
+include requirements.txt
