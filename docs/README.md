@@ -9,9 +9,6 @@ InsightfulPy is a comprehensive Python package designed to make exploratory data
 - [User Guide](USER_GUIDE.md) - Complete workflow tutorial with examples
 - [API Reference](API_REFERENCE.md) - Detailed function documentation
 
-### Development
-- [Contributing Guidelines](CONTRIBUTING.md) - How to contribute to the project
-
 ### Examples
 - [Comprehensive Example](../examples/comprehensive_example.ipynb) - Full workflow notebook
 - [Quick Examples](../examples/) - Additional usage examples
@@ -415,5 +412,6 @@ InsightfulPy is open source and welcomes contributions:
 InsightfulPy is released under the MIT License, making it free for both personal and commercial use.
 
 ---
+
 
 InsightfulPy makes exploratory data analysis comprehensive, intuitive, and professional. Whether you're just starting with data analysis or you're an experienced practitioner, these tools help you understand your data better and communicate your findings effectively.
