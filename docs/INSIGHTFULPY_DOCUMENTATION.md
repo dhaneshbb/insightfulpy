@@ -27,6 +27,42 @@ InsightfulPy is a comprehensive Python package for exploratory data analysis (ED
 
 The package is organized into four main functional categories:
 
+```mermaid
+graph TD
+    A[InsightfulPy v1.0.8] --> B[Core EDA Module]
+    A --> C[Helper Functions]
+    A --> D[Function Categories]
+    
+    B --> E[Statistical Analysis]
+    B --> F[Data Quality Assessment]  
+    B --> G[Visualization Tools]
+    B --> H[Dataset Comparison]
+    
+    E --> E1[calc_stats]
+    E --> E2[calculate_skewness_kurtosis]
+    E --> E3[iqr_trimmed_mean]
+    E --> E4[mad]
+    
+    F --> F1[detect_outliers]
+    F --> F2[missing_inf_values]
+    F --> F3[detect_mixed_data_types]
+    F --> F4[interconnected_outliers]
+    
+    G --> G1[show_missing]
+    G --> G2[plot_boxplots]
+    G --> G3[kde_batches]
+    G --> G4[cat_bar_batches]
+    
+    H --> H1[compare_df_columns]
+    H --> H2[linked_key]
+    H --> H3[display_key_columns]
+    
+    C --> C1[help]
+    C --> C2[quick_start]
+    C --> C3[examples]
+    C --> C4[list_all]
+```
+
 - **Basic Analysis Functions**: Core statistical and structural analysis tools
 - **Data Quality Functions**: Tools for assessing and validating data integrity
 - **Visualization Functions**: Comprehensive plotting and charting capabilities
@@ -60,17 +96,7 @@ pip install -e ".[dev]"
 
 ### Dependencies
 
-The package automatically installs the following required dependencies:
-
-- pandas (>=1.3.0) - Data manipulation and analysis
-- numpy (>=1.20.0) - Numerical computing
-- matplotlib (>=3.3.0) - Basic plotting functionality
-- seaborn (>=0.11.0) - Statistical data visualization
-- scipy (>=1.7.0) - Scientific computing and statistical functions
-- researchpy (>=0.3.0) - Research-oriented statistical tools
-- tableone (>=0.7.0) - Summary table generation
-- missingno (>=0.5.0) - Missing data visualization
-- tabulate (>=0.8.0) - Table formatting utilities
+This package automatically installs pandas (≥1.3), numpy (≥1.20), matplotlib (≥3.3), seaborn (≥0.11), scipy (≥1.7), researchpy (≥0.3), tableone (≥0.7), missingno (≥0.5) and tabulate (≥0.8).
 
 ### Installation Verification
 
@@ -133,6 +159,38 @@ grouped_analysis = ipy.grouped_summary(df, groupby='category_column')
 
 InsightfulPy includes a comprehensive built-in help system:
 
+```mermaid
+graph TD
+    A[import insightfulpy as ipy] --> B{Choose Help Type}
+    
+    B --> C[ipy.help]
+    B --> D[ipy.quick_start]
+    B --> E[ipy.examples]
+    B --> F[ipy.list_all]
+    
+    C --> C1[Basic Functions Overview]
+    C --> C2[Visualization Functions]
+    C --> C3[Advanced Analysis]
+    C --> C4[Statistical Tools]
+    
+    D --> D1[Import Instructions]
+    D --> D2[Basic Analysis Steps]
+    D --> D3[Quality Checks]
+    D --> D4[Visualization Examples]
+    
+    E --> E1[Practical Use Cases]
+    E --> E2[Code Examples]
+    E --> E3[Advanced Workflows]
+    
+    F --> F1[Complete Function List]
+    F --> F2[Organized by Category]
+    
+    C1 --> G[Start Analysis]
+    D4 --> G
+    E3 --> G
+    F2 --> G
+```
+
 ```python
 # Function overview
 ipy.help()
@@ -155,12 +213,36 @@ ipy.list_all()
 
 The recommended approach for data analysis using InsightfulPy follows a systematic workflow:
 
-1. **Data Loading and Overview**
-2. **Data Quality Assessment**
-3. **Statistical Summary Analysis**
-4. **Visualization and Pattern Recognition**
-5. **Relationship Analysis**
-6. **Advanced Analytics**
+```mermaid
+graph TD
+    A[New Dataset] --> B[Load and Overview]
+    B --> C[Data Quality Check]
+    C --> D[Statistical Summary]
+    D --> E[Visualization]
+    E --> F[Relationship Analysis]
+    F --> G[Advanced Analysis]
+    G --> H[Insights & Decisions]
+    
+    B --> B1["columns_info()<br/>What am I working with?"]
+    C --> C1["missing_inf_values()<br/>Can I trust this data?"]
+    C --> C2["detect_outliers()<br/>Are there data issues?"]
+    D --> D1["num_summary()<br/>cat_summary()<br/>What does data tell me?"]
+    E --> E1["plot_boxplots()<br/>kde_batches()<br/>What patterns exist?"]
+    F --> F1["Correlation analysis<br/>Group comparisons<br/>How do variables relate?"]
+    G --> G1["grouped_summary()<br/>Deep dive analysis<br/>What insights emerge?"]
+    
+    style A fill:#e1f5fe
+    style H fill:#c8e6c9
+    style B1 fill:#fff3e0
+    style C1 fill:#fff3e0
+    style C2 fill:#fff3e0
+    style D1 fill:#fff3e0
+    style E1 fill:#fff3e0
+    style F1 fill:#fff3e0
+    style G1 fill:#fff3e0
+```
+
+This workflow guides you through load & overview, data quality check, statistical summary, visualization, relationship analysis, and advanced analysis.
 
 ### Step 1: Data Loading and Overview
 
@@ -184,6 +266,40 @@ The `columns_info` function provides:
 ### Step 2: Data Quality Assessment
 
 Assess data integrity before proceeding with analysis:
+
+```mermaid
+flowchart TD
+    A[Data Quality Check] --> B[Missing Values]
+    A --> C[Data Types]
+    A --> D[Outliers]
+    A --> E[Patterns]
+    
+    B --> B1[missing_inf_values]
+    B1 --> B2[Missing Percentage<br/>Missing Patterns]
+    
+    C --> C1[detect_mixed_data_types]
+    C1 --> C2[Type Inconsistencies<br/>Data Entry Errors]
+    
+    D --> D1[detect_outliers]
+    D1 --> D2[Extreme Values<br/>Measurement Errors]
+    
+    E --> E1[show_missing]
+    E1 --> E2[Visual Patterns<br/>Systematic Issues]
+    
+    B2 --> F[Quality Report]
+    C2 --> F
+    D2 --> F
+    E2 --> F
+    
+    F --> G{Data Quality<br/>Acceptable?}
+    G -->|Yes| H[Proceed with Analysis]
+    G -->|No| I[Clean Data First]
+    I --> A
+    
+    style G fill:#fff3e0
+    style H fill:#c8e6c9
+    style I fill:#ffebee
+```
 
 ```python
 # Check for missing and infinite values
@@ -296,6 +412,29 @@ comparison = ipy.compare_df_columns('primary_dataset', {
 
 For datasets exceeding memory constraints or requiring performance optimization:
 
+```mermaid
+sequenceDiagram
+    participant User
+    participant InsightfulPy
+    participant BatchSystem
+    participant Visualization
+    
+    User->>InsightfulPy: kde_batches(df)
+    InsightfulPy->>BatchSystem: Identify numerical columns
+    BatchSystem->>BatchSystem: Group into batches
+    BatchSystem->>User: Return batch overview
+    
+    Note over User: Review available batches
+    
+    User->>InsightfulPy: kde_batches(df, batch_num=1)
+    InsightfulPy->>BatchSystem: Get batch 1 columns
+    BatchSystem->>Visualization: Create subplot grid
+    Visualization->>Visualization: Generate plots
+    Visualization->>User: Display clean plots
+    
+    Note over User, Visualization: Repeat for other batches as needed
+```
+
 #### Sampling Strategies
 
 ```python
@@ -328,6 +467,171 @@ df['integer_column'] = df['integer_column'].astype('int32')
 
 # Monitor memory usage
 print(df.memory_usage(deep=True))
+```
+
+### Typical Workflow
+
+Most analyses follow this general pattern:
+
+```mermaid
+flowchart TD
+    Start([Load DataFrame]) --> Info[columns_info: Dataset Overview]
+    Info --> Quality{Data Quality Check}
+    
+    Quality --> Missing[missing_inf_values: Check Missing Data]
+    Quality --> Types[detect_mixed_data_types: Validate Types]
+    Quality --> Outliers[detect_outliers: Find Outliers]
+    
+    Missing --> NumAnalysis[Numerical Analysis]
+    Types --> NumAnalysis
+    Outliers --> NumAnalysis
+    
+    NumAnalysis --> NumSum[num_summary: Statistical Summary]
+    NumAnalysis --> NumVis[Numerical Visualization]
+    
+    NumVis --> BoxPlots[plot_boxplots: Distribution Overview]
+    NumVis --> KDE[kde_batches: Detailed Distributions]
+    NumVis --> QQ[qq_plot_batches: Normality Check]
+    
+    Missing --> CatAnalysis[Categorical Analysis]
+    Types --> CatAnalysis
+    
+    CatAnalysis --> CatSum[cat_summary: Category Summary]
+    CatAnalysis --> CatVis[Categorical Visualization]
+    
+    CatVis --> BarCharts[cat_bar_batches: Frequency Analysis]
+    CatVis --> PieCharts[cat_pie_chart_batches: Proportion Analysis]
+    
+    NumSum --> Advanced[Advanced Analysis]
+    CatSum --> Advanced
+    
+    Advanced --> Grouped[grouped_summary: Group Analysis]
+    Advanced --> Relationships[Relationship Analysis]
+    Advanced --> MultiDataset[Multi-Dataset Comparison]
+    
+    Relationships --> NumNum[num_vs_num_scatterplot_pair_batch]
+    Relationships --> CatCat[cat_vs_cat_pair_batch]
+    Relationships --> NumCat[num_vs_cat_box_violin_pair_batch]
+    
+    MultiDataset --> Compare[compare_df_columns]
+    MultiDataset --> Link[linked_key]
+    
+    Advanced --> Results([Analysis Complete])
+```
+
+### Function Categories
+
+```mermaid
+mindmap
+  root((InsightfulPy))
+    Basic Functions
+      num_summary
+        Statistical overview
+        Quick numerical insights
+      cat_summary
+        Category frequencies
+        Mode analysis
+      columns_info
+        Dataset structure
+        Data types overview
+      missing_inf_values
+        Data quality check
+        Missing patterns
+      detect_outliers
+        IQR method
+        Outlier identification
+    
+    Visualization
+      show_missing
+        Missing data matrix
+        Pattern recognition
+      plot_boxplots
+        Distribution overview
+        Outlier visualization
+      kde_batches
+        Density estimation
+        Distribution shape
+      cat_bar_batches
+        Category frequencies
+        Comparative analysis
+      
+    Advanced Analysis
+      grouped_summary
+        Statistical by groups
+        Comparative analysis
+      compare_df_columns
+        Multi-dataset analysis
+        Column profiling
+      interconnected_outliers
+        Cross-column outliers
+        Complex patterns
+        
+    Statistical Tools
+      calc_stats
+        Comprehensive metrics
+        Custom calculations
+      calculate_skewness_kurtosis
+        Distribution shape
+        Normality assessment
+```
+
+### Data Quality Assessment
+
+```mermaid
+graph LR
+    A[Input DataFrame] --> B[Structure Analysis]
+    B --> C[Missing Values]
+    B --> D[Data Types]
+    B --> E[Outliers]
+    
+    C --> C1[missing_inf_values]
+    C1 --> C2[Missing Matrix Visualization]
+    C1 --> C3[Missing Percentage Report]
+    
+    D --> D1[detect_mixed_data_types]
+    D1 --> D2[Type Validation]
+    D1 --> D3[Inconsistency Report]
+    
+    E --> E1[detect_outliers]
+    E1 --> E2[IQR Calculation]
+    E2 --> E3[Outlier Identification]
+    E3 --> E4[interconnected_outliers]
+    E4 --> E5[Cross-Column Analysis]
+    
+    C3 --> F[Quality Report]
+    D3 --> F
+    E5 --> F
+    F --> G[Recommendations]
+```
+
+### Statistical Analysis
+
+```mermaid
+stateDiagram-v2
+    [*] --> DataInput
+    DataInput --> TypeDetection
+    
+    TypeDetection --> Numerical: Numeric columns found
+    TypeDetection --> Categorical: Categorical columns found
+    TypeDetection --> Mixed: Both types present
+    
+    Numerical --> NumStats: calc_stats()
+    NumStats --> Distribution: calculate_skewness_kurtosis()
+    Distribution --> Normality: Shapiro-Wilk / KS Test
+    Normality --> OutlierCheck: detect_outliers()
+    
+    Categorical --> CatStats: Value counts & frequencies
+    CatStats --> Cardinality: cat_high_cardinality()
+    Cardinality --> CatVisualization
+    
+    Mixed --> GroupedAnalysis: grouped_summary()
+    GroupedAnalysis --> RelationshipAnalysis
+    
+    OutlierCheck --> AdvancedAnalysis
+    CatVisualization --> AdvancedAnalysis
+    RelationshipAnalysis --> AdvancedAnalysis
+    
+    AdvancedAnalysis --> [*]
 ```
 
 ### Data Type Handling
@@ -881,12 +1185,8 @@ Report bugs or request features through the GitHub issue tracker:
 - Include system information and package versions
 - Describe expected vs. actual behavior
 
-### License
-
-InsightfulPy is distributed under the MIT License. All contributions are subject to the same license terms.
-
 ---
 
 **Package Information:**
 
-Version: 0.1.8 | Author: Dhanesh B. B. | [Repository](https://github.com/dhaneshbb/insightfulpy) |License: MIT | Python Support: 3.8+
+Version: 0.1.8 | Author: Dhanesh B. B. | [Repository](https://github.com/dhaneshbb/insightfulpy) | License: MIT | Python Support: 3.8+
