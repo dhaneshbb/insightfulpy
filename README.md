@@ -5,7 +5,6 @@
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/insightfulpy)](https://pypi.org/project/insightfulpy/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/insightfulpy)](https://pypi.org/project/insightfulpy/)
 
 A comprehensive Python toolkit for exploratory data analysis with advanced visualization and statistical analysis capabilities.
 
@@ -112,3 +111,4 @@ Python Support: 3.8+
 
 ---
 InsightfulPy makes data exploration intuitive and comprehensive.
+
