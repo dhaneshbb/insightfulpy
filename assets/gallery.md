@@ -181,16 +181,17 @@ base_df, linked_df = ipy.compare_df_columns('key', [df1, df2])
 
 ---
 
-## Professional Features
+## Features
 
 InsightfulPy provides:
 - **Comprehensive Statistical Analysis** - Complete numerical and categorical summaries with confidence intervals
 - **Advanced Distribution Analysis** - KDE plots, box plots, and normality testing
-- **Professional Data Quality Assessment** - Missing value patterns and cross-column outlier detection
+- ** Data Quality Assessment** - Missing value patterns and cross-column outlier detection
 - **Categorical Relationship Analysis** - Heatmaps, cross-tabulations, and multi-dimensional analysis
 - **Multi-Dataset Support** - Dataset comparison, linking, and comprehensive quality metrics
 - **Advanced Visualizations** - Box & violin plots, statistical annotations, and interactive analysis
 
 ---
 
-*All visualizations generated using **InsightfulPy v0.1.8** - Professional EDA toolkit for comprehensive data analysis*
+*All visualizations generated using **InsightfulPy v0.1.8** -  EDA toolkit for comprehensive data analysis*
+
