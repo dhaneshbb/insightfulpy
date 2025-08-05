@@ -95,14 +95,8 @@ ipy.examples()
 ```
 
 ## Requirements
+ Python 3.8+ with pandas (≥1.3), numpy (≥1.20), matplotlib (≥3.3), seaborn (≥0.11), scipy (≥1.7), plus researchpy, tableone, missingno, and tabulate.
 
-- Python 3.8+
-- pandas >= 1.3.0
-- numpy >= 1.20.0
-- matplotlib >= 3.3.0
-- seaborn >= 0.11.0
-- scipy >= 1.7.0
-- Additional dependencies: researchpy, tableone, missingno, tabulate
 
 ## Related links:
 
@@ -111,8 +105,14 @@ ipy.examples()
 - If you encounter any issues or have questions, please open an issue on [GitHub Issues](https://github.com/dhaneshbb/insightfulpy/issues) page.
 - This project is licensed under the MIT License - see the [LICENSE](https://github.com/dhaneshbb/insightfulpy/blob/main/LICENSE) file for details.
 
+
+**Package Information:**
+
+Version: 0.1.8 | Author: Dhanesh B. B. | [Repository](https://github.com/dhaneshbb/insightfulpy) | License: MIT | Python Support: 3.8+
+
 ---
 
 InsightfulPy makes data exploration intuitive and comprehensive.
+
 
 
