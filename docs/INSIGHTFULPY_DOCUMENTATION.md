@@ -29,38 +29,74 @@ The package is organized into four main functional categories:
 
 ```mermaid
 graph TD
-    A[InsightfulPy v1.0.8] --> B[Core EDA Module]
-    A --> C[Helper Functions]
-    A --> D[Function Categories]
+    A[InsightfulPy v0.1.8]
+    A --> B[Core EDA Module]
     
     B --> E[Statistical Analysis]
-    B --> F[Data Quality Assessment]  
-    B --> G[Visualization Tools]
-    B --> H[Dataset Comparison]
-    
     E --> E1[calc_stats]
     E --> E2[calculate_skewness_kurtosis]
     E --> E3[iqr_trimmed_mean]
     E --> E4[mad]
     
+    B --> F[Data Quality Assessment]
     F --> F1[detect_outliers]
     F --> F2[missing_inf_values]
     F --> F3[detect_mixed_data_types]
     F --> F4[interconnected_outliers]
     
+    B --> G[Basic Visualization]
     G --> G1[show_missing]
     G --> G2[plot_boxplots]
     G --> G3[kde_batches]
     G --> G4[cat_bar_batches]
+    G --> G5[cat_pie_chart_batches]
     
-    H --> H1[compare_df_columns]
-    H --> H2[linked_key]
-    H --> H3[display_key_columns]
+    B --> H[Summary Functions]
+    H --> H1[num_summary]
+    H --> H2[cat_summary]
+    H --> H3[columns_info]
+    H --> H4[grouped_summary]
     
+    A --> D[Advanced Analysis]
+    D --> I[Relationship Analysis]
+    I --> I1[num_vs_num_scatterplot_pair_batch]
+    I --> I2[cat_vs_cat_pair_batch]
+    I --> I3[cat_high_cardinality]
+    
+    D --> J[Multi-Dataset Tools]
+    J --> J1[compare_df_columns]
+    J --> J2[linked_key]
+    J --> J3[display_key_columns]
+    
+    D --> K[Batch Processing]
+    K --> K1[Intelligent Batching]
+    K --> K2[Memory Optimization]
+    
+    A --> C[Helper System]
     C --> C1[help]
     C --> C2[quick_start]
     C --> C3[examples]
     C --> C4[list_all]
+    
+    classDef mainNode fill:#2196F3,stroke:#1976D2,stroke-width:3px,color:#fff
+    classDef coreModule fill:#E3F2FD,stroke:#1976D2,stroke-width:2px
+    classDef statistical fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px
+    classDef quality fill:#FFF3E0,stroke:#F57C00,stroke-width:2px
+    classDef visualization fill:#E8F5E8,stroke:#388E3C,stroke-width:2px
+    classDef advanced fill:#FCE4EC,stroke:#C2185B,stroke-width:2px
+    classDef helper fill:#F1F8E9,stroke:#689F38,stroke-width:2px
+    
+    class A mainNode
+    class B,C,D coreModule
+    class E,H statistical
+    class F quality
+    class G visualization
+    class I,J,K advanced
+    class E1,E2,E3,E4,H1,H2,H3,H4 statistical
+    class F1,F2,F3,F4 quality
+    class G1,G2,G3,G4,G5 visualization
+    class I1,I2,I3,J1,J2,J3,K1,K2 advanced
+    class C1,C2,C3,C4 helper
 ```
 
 - **Basic Analysis Functions**: Core statistical and structural analysis tools
@@ -1194,5 +1230,10 @@ Report bugs or request features through the GitHub issue tracker:
 
 **Package Information:**
 
-Version: 0.1.8 | Author: Dhanesh B. B. | [Repository](https://github.com/dhaneshbb/insightfulpy) | License: MIT | Python Support: 3.8+
+**Version:** 0.1.8 | **Author:** Dhanesh B. B. | **License:** MIT | **Python:** 3.8+
+
+---
+
+InsightfulPy makes data exploration intuitive and comprehensive.
+
 
