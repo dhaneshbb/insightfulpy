@@ -4,128 +4,133 @@
 
 ---
 
-## 📊 Statistical Summary Outputs
+## Statistical Summary and Data Overview
 
 <div align="center">
 
-### Numerical Data Analysis
-| Summary Statistics | Distribution Analysis |
-|:------------------:|:---------------------:|
-| ![Statistical Summary](image/image_0.png) | ![Distribution Analysis](image/image_1.png) |
-| *Comprehensive numerical statistics using `num_summary()`* | *Skewness and kurtosis analysis with `calculate_skewness_kurtosis()`* |
+| Summary Statistics | Dataset Structure Overview |
+|:------------------:|:--------------------------:|
+| ![Statistical Summary](image/image_17.png) | ![Dataset Overview](image/image_9.png) |
+| *Complete numerical and categorical summaries using `num_summary()` and `cat_summary()`* | *Dataset structure analysis with `columns_info()` showing data types and ranges* |
 
 </div>
 
 ---
 
-## 📈 Distribution Visualizations
+## Distribution Analysis
 
 <div align="center">
 
-| KDE Plots | Box Plots | Histogram Analysis |
-|:---------:|:---------:|:------------------:|
-| ![KDE Distribution](image/image_2.png) | ![Box Plot Analysis](image/image_3.png) | ![Histogram Plots](image/image_4.png) |
-| *Distribution plots via `kde_batches()`* | *Outlier detection with `plot_boxplots()`* | *Data distribution patterns* |
+### Distribution Patterns and Normality Testing
+| KDE Distribution Plots | Box Plot Analysis | QQ Plots for Normality |
+|:----------------------:|:-----------------:|:----------------------:|
+| ![KDE Plots](image/image_7.png) | ![Box Plots](image/image_8.png) | ![QQ Plots](image/image_5.png) |
+| *Distribution analysis via `kde_batches()` with statistical markers* | *Outlier detection and quartile analysis using `plot_boxplots()`* | *Normality testing with quantile-quantile plots* |
+
+### Statistical Distribution Analysis
+| Distribution Analysis | Interconnected Outliers |
+|:---------------------:|:----------------------:|
+| ![Distribution Stats](image/image_2.png) | ![Outlier Analysis](image/image_3.png) |
+| *Histogram analysis with skewness and kurtosis calculations* | *Cross-column outlier detection using `interconnected_outliers()`* |
 
 </div>
 
 ---
 
-## 🏷️ Categorical Data Analysis
+## Categorical Data Analysis
 
 <div align="center">
 
-### Categorical Summaries and Visualizations
-| Category Summary | Bar Charts | Pie Chart Analysis |
-|:----------------:|:----------:|:------------------:|
-| ![Categorical Summary](image/image_5.png) | ![Bar Chart Batches](image/image_6.png) | ![Pie Chart Analysis](image/image_7.png) |
-| *Categorical analysis using `cat_summary()`* | *Category distributions via `cat_bar_batches()`* | *Proportional analysis with `cat_pie_chart_batches()`* |
+### Categorical Distributions and Relationships
+| Pie Chart Analysis | Bar Chart Analysis | Cross-tabulation Analysis |
+|:------------------:|:------------------:|:-------------------------:|
+| ![Pie Charts](image/image_6.png) | ![Bar Charts](image/image_16.png) | ![Cross-tab Analysis](image/image_18.png) |
+| *Proportional analysis using `cat_pie_chart_batches()`* | *Category distributions via `cat_bar_batches()`* | *Department vs Performance rating cross-analysis* |
+
+### Categorical Relationship Heatmaps
+| Location-based Relationships |
+|:---------------------------:|
+| ![Categorical Heatmaps](image/image_1.png) |
+| *Multi-dimensional categorical relationships using `cat_vs_cat_pair_batch()`* |
 
 </div>
 
 ---
 
-## 🔍 Data Quality Assessment
+## Data Quality Assessment
 
 <div align="center">
 
-| Missing Data Patterns | Outlier Detection | Data Type Validation |
-|:---------------------:|:-----------------:|:--------------------:|
-| ![Missing Data](image/image_8.png) | ![Outlier Analysis](image/image_9.png) | ![Data Types](image/image_10.png) |
-| *Missing value visualization via `show_missing()`* | *Outlier identification using `detect_outliers()`* | *Data type analysis and validation* |
+### Missing Value Analysis
+| Missing Values Pattern Analysis | Missing Values Summary (Dataset 2) |
+|:------------------------------:|:-----------------------------------:|
+| ![Missing Values Analysis](image/image_11.png) | ![Missing Values Summary](image/image_12.png) |
+| *Missing data patterns using `show_missing()` and `missing_inf_values()`* | *Comprehensive missing value assessment across different datasets* |
 
 </div>
 
 ---
 
-## 🔗 Relationship Analysis
+## Advanced Relationship Analysis
 
 <div align="center">
 
-### Correlation and Association Analysis
-| Numerical Correlations | Categorical Relationships | Cross-tabulation |
-|:----------------------:|:------------------------:|:----------------:|
-| ![Correlation Analysis](image/image_11.png) | ![Category Relations](image/image_12.png) | ![Cross-tab Analysis](image/image_13.png) |
-| *Scatter plot pairs via `num_vs_num_scatterplot_pair_batch()`* | *Categorical relationships using `cat_vs_cat_pair_batch()`* | *Cross-categorical analysis* |
+### Numerical vs Categorical Relationships
+| Box & Violin Plot Analysis |
+|:--------------------------:|
+| ![Numerical vs Categorical](image/image_15.png) |
+| *Advanced relationship analysis showing numerical variables grouped by categorical factors* |
 
 </div>
 
 ---
 
-## 👥 Grouped Analysis
+## Multi-Dataset Comparison Tools
 
 <div align="center">
 
-| Group Statistics | Multi-level Analysis | Comparative Analysis |
-|:----------------:|:--------------------:|:--------------------:|
-| ![Group Summary](image/image_14.png) | ![Multi-level](image/image_15.png) | ![Comparative](image/image_16.png) |
-| *Group-based analysis via `grouped_summary()`* | *Multi-dimensional grouping* | *Cross-group comparisons* |
+### Dataset Comparison and Linking
+| Multi-Dataset Comparison | Dataset Linking Analysis |
+|:------------------------:|:------------------------:|
+| ![Dataset Comparison](image/image_13.png) | ![Dataset Linking](image/image_14.png) |
+| *Multi-dataset analysis using `compare_df_columns()`* | *Dataset linking and key analysis via `linked_key()`* |
 
 </div>
 
 ---
 
-## 🔧 Advanced Features
+## Key InsightfulPy Functions Demonstrated
 
-<div align="center">
+### **Data Structure Analysis**
+- `columns_info()` - Comprehensive dataset structure overview
+- `num_summary()` - Statistical summaries for numerical data
+- `cat_summary()` - Categorical data analysis with frequency distributions
 
-### Dataset Comparison and Advanced Tools
-| Multi-Dataset Comparison | High Cardinality Detection |
-|:------------------------:|:--------------------------:|
-| ![Dataset Comparison](image/image_17.png) | ![Cardinality Analysis](image/image_18.png) |
-| *Multi-dataset analysis using `compare_df_columns()`* | *High cardinality detection via `cat_high_cardinality()`* |
+### **Distribution Analysis**
+- `kde_batches()` - Kernel density estimation with statistical markers
+- `plot_boxplots()` - Box plot analysis for outlier detection
+- `calculate_skewness_kurtosis()` - Distribution shape analysis
 
-</div>
+### **Data Quality Assessment**
+- `show_missing()` - Missing value pattern visualization
+- `missing_inf_values()` - Comprehensive missing data assessment
+- `interconnected_outliers()` - Cross-column outlier analysis
 
----
+### **Categorical Analysis**
+- `cat_pie_chart_batches()` - Proportional analysis with pie charts
+- `cat_bar_batches()` - Bar chart distributions for categorical data
+- `cat_vs_cat_pair_batch()` - Categorical relationship heatmaps
 
-## 🚀 Key Features Demonstrated
-
-### ✨ **Statistical Analysis**
-- Comprehensive summary statistics for numerical data
-- Distribution analysis with skewness and kurtosis
-- Robust statistical measures (IQR trimmed mean, MAD)
-
-### 🎯 **Data Quality Assessment**
-- Missing value pattern identification
-- Outlier detection using IQR method
-- Data type validation and mixed-type detection
-
-### 📊 **Professional Visualizations**
-- Batch processing for large datasets
-- Customizable plot generation
-- Publication-ready charts and graphs
-
-### 🔍 **Advanced Analysis**
-- Cross-column relationship analysis
-- Multi-dataset comparison capabilities
-- High-cardinality categorical analysis
+### **Advanced Tools**
+- `compare_df_columns()` - Multi-dataset comparison capabilities
+- `linked_key()` - Dataset linking and key column analysis
+- Numerical vs categorical relationship analysis
 
 ---
 
-## 📖 Usage Examples
+## Usage Examples
 
-Each visualization above can be generated using simple InsightfulPy commands:
+Generate these comprehensive analyses with simple InsightfulPy commands:
 
 ```python
 import insightfulpy as ipy
@@ -134,14 +139,38 @@ import pandas as pd
 # Load your dataset
 df = pd.read_csv('your_data.csv')
 
-# Generate comprehensive analysis
-ipy.num_summary(df)           # Statistical summaries
-ipy.plot_boxplots(df)         # Box plot analysis
-ipy.kde_batches(df)           # Distribution plots
-ipy.show_missing(df)          # Missing data patterns
-ipy.detect_outliers(df)       # Outlier identification
+# Basic analysis
+ipy.columns_info('Dataset Overview', df)
+ipy.num_summary(df)
+ipy.cat_summary(df)
+
+# Distribution analysis
+ipy.kde_batches(df)
+ipy.plot_boxplots(df)
+
+# Data quality checks
+ipy.show_missing(df)
+ipy.interconnected_outliers(df)
+
+# Categorical analysis
+ipy.cat_pie_chart_batches(df)
+ipy.cat_vs_cat_pair_batch(df)
+
+# Multi-dataset comparison
+base_df, linked_df = ipy.compare_df_columns('key', [df1, df2])
+ipy.linked_key([df1, df2])
 ```
 
 ---
 
-*All visualizations generated using **InsightfulPy v0.1.8** - Making data exploration intuitive and comprehensive.*
+## Batch Processing Capabilities
+
+InsightfulPy automatically handles:
+- **Large datasets** with intelligent batching
+- **Memory optimization** for efficient processing
+- **Professional formatting** for publication-ready outputs
+- **Comprehensive statistics** with normality testing
+
+---
+
+*All visualizations generated using **InsightfulPy v0.1.8** - Professional EDA toolkit for comprehensive data analysis*
