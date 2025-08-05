@@ -22,7 +22,8 @@ InsightfulPy simplifies the process of exploring and understanding your data thr
 
 ### Examples
 - **[Quick Examples](/examples/example.ipynb)** - Additional usage scenarios
-- **[Gallery](/assets/gallery.md)** - Some output results
+- **[Output Results Gallery](/assets/gallery.md)** - Some output results
+- **[diagram Gallery](/assets/diagrams.md)** - diagram collection
 
 ## Key Features
 - **Statistical Analysis**: Comprehensive statistics, distribution analysis, and normality testing
@@ -124,6 +125,7 @@ Python 3.8+ with pandas (≥1.3), numpy (≥1.20), matplotlib (≥3.3), seaborn 
 
 ---
 InsightfulPy makes data exploration intuitive and comprehensive.
+
 
 
 
