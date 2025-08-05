@@ -631,7 +631,12 @@ stateDiagram-v2
     CatVisualization --> AdvancedAnalysis
     RelationshipAnalysis --> AdvancedAnalysis
     
-    AdvancedAnalysis --> [*]
+    AdvancedAnalysis --> Visualization: Plotting functions
+    AdvancedAnalysis --> DataQuality: Missing values & validation
+    
+    Visualization --> Results
+    DataQuality --> Results
+    Results --> [*]
 ```
 
 ### Data Type Handling
@@ -1190,3 +1195,4 @@ Report bugs or request features through the GitHub issue tracker:
 **Package Information:**
 
 Version: 0.1.8 | Author: Dhanesh B. B. | [Repository](https://github.com/dhaneshbb/insightfulpy) | License: MIT | Python Support: 3.8+
+
