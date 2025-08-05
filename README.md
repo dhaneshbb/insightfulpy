@@ -1,13 +1,11 @@
 # InsightfulPy
 
 [![PyPI version](https://badge.fury.io/py/insightfulpy.svg)](https://badge.fury.io/py/insightfulpy)
+[![PyPI](https://img.shields.io/pypi/v/insightfulpy)](https://pypi.org/project/insightfulpy/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/insightfulpy)](https://pypi.org/project/insightfulpy/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://static.pepy.tech/badge/insightfulpy)](https://pepy.tech/project/insightfulpy)
-[![GitHub issues](https://img.shields.io/github/issues/dhaneshbb/insightfulpy)](https://github.com/dhaneshbb/insightfulpy/issues)
-[![GitHub stars](https://img.shields.io/github/stars/dhaneshbb/insightfulpy)](https://github.com/dhaneshbb/insightfulpy/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/dhaneshbb/insightfulpy)](https://github.com/dhaneshbb/insightfulpy/network)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dhaneshbb/insightfulpy/graphs/commit-activity)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/insightfulpy)](https://pypi.org/project/insightfulpy/)
 
 A comprehensive Python toolkit for exploratory data analysis with advanced visualization and statistical analysis capabilities.
 
