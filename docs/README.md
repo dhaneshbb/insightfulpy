@@ -13,7 +13,6 @@ A comprehensive Python package for exploratory data analysis (EDA) that streamli
 
 
 ### Examples
-- **[Comprehensive Example](../examples/comprehensive_example.ipynb)** - Full workflow demonstration
 - **[Quick Examples](../examples/)** - Additional usage scenarios
 
 ## What is InsightfulPy?
@@ -116,4 +115,5 @@ MIT License - Free for personal and commercial use.
 ---
 
 **Version**: 1.0.8 | **Python**: 3.8+ | **Author**: Dhanesh Budhrani
+
 
