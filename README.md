@@ -10,6 +10,20 @@ A comprehensive Python toolkit for exploratory data analysis with advanced visua
 ## Overview
 InsightfulPy simplifies the process of exploring and understanding your data through intuitive functions for statistical analysis, data quality assessment, and professional visualization. Whether you're a data scientist, analyst, or researcher, this package provides the tools you need for thorough data exploration.
 
+## Documentation Navigation
+
+| Document                                                                 | Description                                        |
+|--------------------------------------------------------------------------|----------------------------------------------------|
+| **[Installation Guide](./docs/INSIGHTFULPY_DOCUMENTATION.md#installation)**                           | Installation instructions and setup verification   |
+| **[User Guide](./docs/INSIGHTFULPY_DOCUMENTATION.md#user-guide)**                                     | Complete workflow tutorial with step-by-step examples |
+| **[API Reference](./docs/INSIGHTFULPY_DOCUMENTATION.md#api-reference)**                               | Detailed function documentation and parameters     |
+| **[Contributing](./docs/INSIGHTFULPY_DOCUMENTATION.md#contributing)**                                 | Guidelines for contributing to the project         |
+
+
+### Examples
+- **[Quick Examples](/examples/example.ipynb)** - Additional usage scenarios
+- **[Some Output Gallery](/assets/gallery.md)**
+
 ## Key Features
 - **Statistical Analysis**: Comprehensive statistics, distribution analysis, and normality testing
 - **Data Quality Assessment**: Missing value detection, outlier identification, and data type validation
@@ -108,6 +122,7 @@ Python 3.8+ with pandas (≥1.3), numpy (≥1.20), matplotlib (≥3.3), seaborn 
 
 ---
 InsightfulPy makes data exploration intuitive and comprehensive.
+
 
 
 
