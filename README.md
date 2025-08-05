@@ -14,11 +14,12 @@ InsightfulPy simplifies the process of exploring and understanding your data thr
 
 | Document                                                                 | Description                                        |
 |--------------------------------------------------------------------------|----------------------------------------------------|
-| **[Installation Guide](./docs/INSIGHTFULPY_DOCUMENTATION.md#installation)**                           | Installation instructions and setup verification   |
-| **[User Guide](./docs/INSIGHTFULPY_DOCUMENTATION.md#user-guide)**                                     | Complete workflow tutorial with step-by-step examples |
-| **[API Reference](./docs/INSIGHTFULPY_DOCUMENTATION.md#api-reference)**                               | Detailed function documentation and parameters     |
-| **[Contributing](./docs/INSIGHTFULPY_DOCUMENTATION.md#contributing)**                                 | Guidelines for contributing to the project         |
-
+| **[Overview](./docs/INSIGHTFULPY_DOCUMENTATION.md#overview)**           | Package introduction, features, and architecture  |
+| **[Installation Guide](./docs/INSIGHTFULPY_DOCUMENTATION.md#installation)** | Installation instructions and setup verification  |
+| **[Quick Start](./docs/INSIGHTFULPY_DOCUMENTATION.md#quick-start)**     | Basic workflow and essential functions tutorial   |
+| **[User Guide](./docs/INSIGHTFULPY_DOCUMENTATION.md#user-guide)**       | Complete workflow tutorial with step-by-step examples |
+| **[API Reference](./docs/INSIGHTFULPY_DOCUMENTATION.md#api-reference)** | Detailed function documentation and parameters    |
+| **[Contributing](./docs/INSIGHTFULPY_DOCUMENTATION.md#contributing)**   | Guidelines for contributing to the project        |
 
 ### Examples
 - **[Quick Examples](/examples/example.ipynb)** - Additional usage scenarios
@@ -125,6 +126,7 @@ Python 3.8+ with pandas (≥1.3), numpy (≥1.20), matplotlib (≥3.3), seaborn 
 
 ---
 InsightfulPy makes data exploration intuitive and comprehensive.
+
 
 
 
