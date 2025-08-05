@@ -6,11 +6,12 @@ A comprehensive Python package for exploratory data analysis (EDA) that streamli
 
 | Document                                                                 | Description                                        |
 |--------------------------------------------------------------------------|----------------------------------------------------|
-| **[Installation Guide](INSIGHTFULPY_DOCUMENTATION.md#installation)**                           | Installation instructions and setup verification   |
-| **[User Guide](INSIGHTFULPY_DOCUMENTATION.md#user-guide)**                                     | Complete workflow tutorial with step-by-step examples |
-| **[API Reference](INSIGHTFULPY_DOCUMENTATION.md#api-reference)**                               | Detailed function documentation and parameters     |
-| **[Contributing](INSIGHTFULPY_DOCUMENTATION.md#contributing)**                                 | Guidelines for contributing to the project         |
-
+| **[Overview](INSIGHTFULPY_DOCUMENTATION.md#overview)**                  | Package introduction, features, and architecture  |
+| **[Installation Guide](INSIGHTFULPY_DOCUMENTATION.md#installation)**    | Installation instructions and setup verification  |
+| **[Quick Start](INSIGHTFULPY_DOCUMENTATION.md#quick-start)**            | Basic workflow and essential functions tutorial   |
+| **[User Guide](INSIGHTFULPY_DOCUMENTATION.md#user-guide)**              | Complete workflow tutorial with step-by-step examples |
+| **[API Reference](INSIGHTFULPY_DOCUMENTATION.md#api-reference)**        | Detailed function documentation and parameters    |
+| **[Contributing](INSIGHTFULPY_DOCUMENTATION.md#contributing)**          | Guidelines for contributing to the project        |
 
 ### Examples
 - **[Quick Examples](../examples/example.ipynb)** - Additional usage scenarios
@@ -117,6 +118,7 @@ MIT License - Free for personal and commercial use.
 ---
 
 **Version**: 1.0.8 | **Python**: 3.8+ | **Author**: Dhanesh Budhrani
+
 
 
 
