@@ -13,7 +13,7 @@ A comprehensive Python package for exploratory data analysis (EDA) that streamli
 
 
 ### Examples
-- **[Quick Examples](../examples/)** - Additional usage scenarios
+- **[Quick Examples](../examples/example.ipynb)** - Additional usage scenarios
 - **[Output Results Gallery](../assets/gallery.md)** - Some output results
 - **[diagram Gallery](../assets/diagrams.md)** - diagram collection
 
@@ -117,6 +117,7 @@ MIT License - Free for personal and commercial use.
 ---
 
 **Version**: 1.0.8 | **Python**: 3.8+ | **Author**: Dhanesh Budhrani
+
 
 
 
