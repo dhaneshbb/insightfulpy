@@ -1207,8 +1207,9 @@ InsightfulPy is distributed under the MIT License. All contributions are subject
 ---
 
 **Package Information:**
-- Version: 1.0.8
-- Author: Dhanesh Budhrani
+- Version: 0.1.8
+- Author: Dhanesh B. B.
 - Repository: https://github.com/dhaneshbb/insightfulpy
 - License: MIT
 - Python Support: 3.8+
+
