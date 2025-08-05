@@ -1,13 +1,20 @@
 # InsightfulPy
 
+[![PyPI version](https://badge.fury.io/py/insightfulpy.svg)](https://badge.fury.io/py/insightfulpy)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://static.pepy.tech/badge/insightfulpy)](https://pepy.tech/project/insightfulpy)
+[![GitHub issues](https://img.shields.io/github/issues/dhaneshbb/insightfulpy)](https://github.com/dhaneshbb/insightfulpy/issues)
+[![GitHub stars](https://img.shields.io/github/stars/dhaneshbb/insightfulpy)](https://github.com/dhaneshbb/insightfulpy/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/dhaneshbb/insightfulpy)](https://github.com/dhaneshbb/insightfulpy/network)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dhaneshbb/insightfulpy/graphs/commit-activity)
+
 A comprehensive Python toolkit for exploratory data analysis with advanced visualization and statistical analysis capabilities.
 
 ## Overview
-
 InsightfulPy simplifies the process of exploring and understanding your data through intuitive functions for statistical analysis, data quality assessment, and professional visualization. Whether you're a data scientist, analyst, or researcher, this package provides the tools you need for thorough data exploration.
 
 ## Key Features
-
 - **Statistical Analysis**: Comprehensive statistics, distribution analysis, and normality testing
 - **Data Quality Assessment**: Missing value detection, outlier identification, and data type validation
 - **Professional Visualization**: Box plots, distribution plots, correlation analysis, and categorical charts
@@ -16,13 +23,11 @@ InsightfulPy simplifies the process of exploring and understanding your data thr
 - **Easy Integration**: Works seamlessly with pandas DataFrames
 
 ## Installation
-
 ```bash
 pip install insightfulpy
 ```
 
 ## Quick Start
-
 ```python
 import pandas as pd
 import insightfulpy as ipy
@@ -75,9 +80,7 @@ ipy.kde_batches(df, batch_num=1)
 - `mad(data)` - Mean absolute deviation
 
 ## Help System
-
 InsightfulPy includes a built-in help system for easy reference:
-
 ```python
 import insightfulpy as ipy
 
@@ -95,24 +98,19 @@ ipy.examples()
 ```
 
 ## Requirements
- Python 3.8+ with pandas (≥1.3), numpy (≥1.20), matplotlib (≥3.3), seaborn (≥0.11), scipy (≥1.7), plus researchpy, tableone, missingno, and tabulate.
-
+Python 3.8+ with pandas (≥1.3), numpy (≥1.20), matplotlib (≥3.3), seaborn (≥0.11), scipy (≥1.7), plus researchpy, tableone, missingno, and tabulate.
 
 ## Related links:
-
 - For detailed documentation and examples, visit [GitHub repository](https://github.com/dhaneshbb/insightfulpy).
 - Contributions are welcome! Please read contributing guidelines and submit pull requests to GitHub repository.
 - If you encounter any issues or have questions, please open an issue on [GitHub Issues](https://github.com/dhaneshbb/insightfulpy/issues) page.
 - This project is licensed under the MIT License - see the [LICENSE](https://github.com/dhaneshbb/insightfulpy/blob/main/LICENSE) file for details.
 
-
-**Package Information:**
-
-Version: 0.1.8 | Author: Dhanesh B. B. | [Repository](https://github.com/dhaneshbb/insightfulpy) | License: MIT | Python Support: 3.8+
+## Package Information:
+Version: 0.1.8 
+Author: Dhanesh B. B. 
+License: MIT  
+Python Support: 3.8+
 
 ---
-
 InsightfulPy makes data exploration intuitive and comprehensive.
-
-
-
