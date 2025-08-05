@@ -103,12 +103,14 @@ Python 3.8+ with pandas (≥1.3), numpy (≥1.20), matplotlib (≥3.3), seaborn 
 - This project is licensed under the MIT License - see the [LICENSE](https://github.com/dhaneshbb/insightfulpy/blob/main/LICENSE) file for details.
 
 ## Package Information:
-Version: 0.1.8 
-Author: Dhanesh B. B. 
-License: MIT  
-Python Support: 3.8+
+
+- Version: 0.1.8 
+- Author: Dhanesh B. B. 
+- License: MIT  
+- Python Support: 3.8+
 
 ---
 InsightfulPy makes data exploration intuitive and comprehensive.
+
 
 
