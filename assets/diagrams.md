@@ -489,8 +489,5 @@ comparison = ipy.compare_df_columns('base', {
 **Version:** 0.1.8 | **Author:** Dhanesh B. B. | **License:** MIT | **Python:** 3.8+
 
 ---
-InsightfulPy makes data exploration intuitive and comprehensive.
-
----
 
 *All diagrams represent the comprehensive architecture and workflows of **InsightfulPy** - EDA toolkit for comprehensive data analysis*
