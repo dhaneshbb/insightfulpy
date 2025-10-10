@@ -1,0 +1,72 @@
+# MANIFEST.in - Package distribution
+
+# Essential license and documentation files
+include LICENSE
+include NOTICE
+include README_PYPI.md
+include THIRD_PARTY_LICENSES.txt
+include CHANGELOG.md
+
+# Package metadata
+include pyproject.toml
+
+# Type information for type checkers
+include src/insightfulpy/py.typed
+
+# Exclude development and test files from distribution
+exclude .editorconfig
+exclude .flake8
+exclude .gitignore
+exclude .pre-commit-config.yaml
+exclude .secrets.baseline
+exclude mypy.ini
+exclude pytest.ini
+exclude requirements.txt
+exclude requirements-dev.txt
+exclude CONTRIBUTING.md
+exclude README.md
+
+# Exclude development directories
+prune .github
+prune .vscode
+prune .bkup
+prune tests
+prune docs
+prune scripts
+prune htmlcov
+prune cover
+prune .pytest_cache
+prune .mypy_cache
+prune .cache
+prune .tox
+prune .nox
+prune .hypothesis
+prune .git
+prune output
+prune .Releases
+
+# Exclude build directories
+prune build
+prune dist
+prune *.egg-info
+
+# Exclude build artifacts
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude Thumbs.db
+global-exclude *.log
+global-exclude *.tmp
+global-exclude *.temp
+global-exclude *.bak
+global-exclude *.backup
+global-exclude *.orig
+global-exclude *~
+global-exclude .coverage
+global-exclude coverage.xml
+global-exclude nosetests.xml
+global-exclude *.so
+global-exclude *.dylib
+global-exclude *.dll

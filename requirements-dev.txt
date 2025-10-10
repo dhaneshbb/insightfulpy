@@ -1,0 +1,18 @@
+# Development and Testing Dependencies
+# Install with: pip install -r requirements-dev.txt
+
+# Development tools (also defined in pyproject.toml [project.optional-dependencies.dev])
+pytest>=8.0.0
+pytest-cov>=6.0.0
+pytest-xdist>=3.0.0
+pytest-timeout>=2.1.0
+pytest-mock>=3.10.0
+
+# Code Quality Tools
+mypy>=1.8.0
+black>=24.0.0
+flake8>=7.0.0
+isort>=5.12.0
+
+# Git Hooks
+pre-commit>=3.0.0

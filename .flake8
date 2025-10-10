@@ -1,0 +1,34 @@
+[flake8]
+max-line-length = 88
+extend-ignore = E203, E402, W503, E501
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    env,
+    .eggs,
+    *.egg,
+    build,
+    dist,
+    .tox,
+    .mypy_cache,
+    .pytest_cache,
+    htmlcov,
+    eda-original.py
+
+per-file-ignores =
+    __init__.py:F401,F403
+    tests/*:F401,F403,F811,F841
+    src/insightfulpy/advanced_viz.py:F401,F403,F405,C901
+    src/insightfulpy/analysis.py:F401,F403,F405,C901
+    src/insightfulpy/comparison.py:F401,F403,F405
+    src/insightfulpy/data_quality.py:F401,F403,F405
+    src/insightfulpy/statistics.py:F401,F403,F405
+    src/insightfulpy/summary.py:F401,F403,F405
+    src/insightfulpy/visualization.py:F401,F403,F405
+
+max-complexity = 10
+count = True
+statistics = True
+show-source = True
