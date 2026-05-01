@@ -3,6 +3,9 @@
 <p align="center">Python toolkit for exploratory data analysis with visualization and statistical functions.</p>
 
 <p align="center">
+  <a href="https://pepy.tech/projects/insightfulpy">
+    <img src="https://static.pepy.tech/personalized-badge/insightfulpy?period=total&units=NONE&left_color=BLACK&right_color=GREEN&left_text=downloads" alt="PyPI Downloads">
+  </a>
   <a href="https://pypi.org/project/insightfulpy/">
     <img src="https://badge.fury.io/py/insightfulpy.svg" alt="PyPI version">
   </a>
